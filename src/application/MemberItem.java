@@ -1,7 +1,7 @@
 package application;
 
 /**
- * 회원 정보 다루는 클래스
+ * 회원 정보 다루는 클래스임.
  */
 public class MemberItem {
 	
