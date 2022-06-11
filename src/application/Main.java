@@ -21,7 +21,7 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("LoginFrm.fxml"));
 			loader.setController(new ControllerMain());
 			Parent root = (Parent)loader.load();
-			root.setStyle("-fx-background-color:#0099ff");
+			root.setStyle("-fx-background-color:#54E74D");
 			Scene scene = new Scene(root); 
 			primaryStage.setTitle("Library Booking System");
 			primaryStage.setScene(scene);
