@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="395.0" style="-fx-background-color: #0099FF; -fx-border-color: #ff0000; -fx-border-width: 5;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="395.0" style="-fx-background-color:#54E74D; " stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label fx:id="lbl_title" alignment="TOP_LEFT" layoutX="68.0" layoutY="32.0" prefHeight="47.0" prefWidth="293.0" text="도서 관리 시스템" textAlignment="JUSTIFY" textFill="#464646">
          <font>
