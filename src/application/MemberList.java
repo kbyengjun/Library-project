@@ -16,8 +16,8 @@ public class MemberList {
 	
 	MemberList(){
 		item.add(new MemberItem("test","test","강병준",2019243161,"컴퓨터공학부","010-6668-3173"));		
-		item.add(new MemberItem("testid2","test1234","대일 은가가바 고고",2019,"컴퓨터공학부","010-****-****"));
-		item.add(new MemberItem("testid3","test1234","김승현",2019,"컴퓨터공학부","010-****-****"));
+		item.add(new MemberItem("testid2","test1234","대일 은가가바 고고",2020243162,"컴퓨터공학부","010-****-****"));
+		item.add(new MemberItem("testid3","test1234","김승현",2020243014,"컴퓨터공학부","010-5707-1847"));
 		
 	}
 	

@@ -19,11 +19,10 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
- * ·Î±×ÀÎ È­¸é
+ * ë¡œê·¸ì¸ í™”ë©´
  * 
- * ±â´É : È¸¿ø ·Î±×ÀÎ, È¸¿ø°¡ÀÔ Æû ¿­±â ÀÌº¥Æ®
- * 
- * @author ±è¼º¼ö
+ * ê¸°ëŠ¥ : íšŒì› ë¡œê·¸ì¸, íšŒì›ê°€ì… í¼ ì—´ê¸° ì´ë²¤íŠ¸
+ *
  */
 public class ControllerMain implements Initializable{
 	
@@ -47,12 +46,12 @@ public class ControllerMain implements Initializable{
 			if ( Username.getText().equals(mb_item.get(i).getUserId()) 
 				&& Password.getText().equals(mb_item.get(i).getUserPw()) ) {
 				
-				// È¸¿ø°¡ÀÔ Ã¢ ¼³Á¤ 
+				// íšŒì›ê°€ì… ì°½ ì„¤ì • 
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("LibraryFrm.fxml"));
 				loader.setController(new ControllerLibrary());
 				Parent root = (Parent)loader.load();
 				
-				// ·Î±×ÀÎ ¾ÆÀÌµğ Àü´Ş
+				// ë¡œê·¸ì¸ ì•„ì´ë”” ì „ë‹¬
 				ControllerLibrary controller = loader.<ControllerLibrary>getController();
 				controller.initData(mb_item.get(i));
 						
@@ -63,7 +62,7 @@ public class ControllerMain implements Initializable{
 				primaryStage.setScene(scene);
 				primaryStage.show();	
 				
-				// ·Î±×ÀÎ Ã¢ ¼û±è
+				// ë¡œê·¸ì¸ ì°½ ìˆ¨ê¹€
 				((Node) event.getSource()).getScene().getWindow().hide();
 			}else {
 				lbl_title.setText("Loign Error");
@@ -90,7 +89,7 @@ public class ControllerMain implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub
-		// Main Å¬·¡½º¿¡ ÀÖ´Â mb_info 
+		// Main í´ë˜ìŠ¤ì— ìˆëŠ” mb_info 
 		Username.setText("test");
 		Password.setText("test");
 		mb_info = Main.getMemberList();
