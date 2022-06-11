@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="514.0" style="-fx-background-color: #0099ff; -fx-border-color: #ff0033; -fx-border-width: 4;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="163.0" layoutY="32.0" prefHeight="40.0" prefWidth="181.0" text="회원 정보 변경">
+         <font>
+            <Font name="Malgun Gothic Bold" size="27.0" />
+         </font>
+      </Label>
+      <GridPane hgap="20.0" layoutX="98.0" layoutY="98.0" prefHeight="244.0" prefWidth="320.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="118.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="202.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="아이디" />
+            <Label text="기존 비밀번호" GridPane.rowIndex="1" />
+            <Label text="변경 비밀번호" GridPane.rowIndex="2" />
+            <Label text="변경 비밀번호 확인" GridPane.rowIndex="3" />
+            <Label text="이름" GridPane.rowIndex="4" />
+            <Label text="학번" GridPane.rowIndex="6" />
+            <PasswordField fx:id="m_pw" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Wingdings" size="12.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="m_repw" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Wingdings" size="12.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="m_repw2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Wingdings" size="12.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="m_dpName" prefHeight="25.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="m_id" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="m_name" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="m_stnum" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="학과" GridPane.rowIndex="5" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <Label layoutX="159.0" layoutY="358.0" text="휴대전화" />
+      <TextField fx:id="m_ph1" layoutX="226.0" layoutY="353.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="m_ph2" layoutX="294.0" layoutY="353.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="m_ph3" layoutX="363.0" layoutY="353.0" prefHeight="25.0" prefWidth="55.0" />
+      <Button fx:id="btn_modify" layoutX="158.0" layoutY="418.0" mnemonicParsing="false" onAction="#modifyOK" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #333; -fx-text-fill: #fff;" styleClass="btn_com" text="정보 수정" />
+   </children>
+</AnchorPane>
