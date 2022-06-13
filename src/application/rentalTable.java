@@ -3,7 +3,7 @@ package application;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
- * È¸¿ø ´ë¿© Á¤º¸ Å×ÀÌºí 
+ * íšŒì› ëŒ€ì—¬ ì •ë³´ í…Œì´ë¸” 
  */
 public class rentalTable { 
 
