@@ -3,7 +3,7 @@ package application;
 import javafx.beans.property.SimpleStringProperty;
 
 /**
- * µµ¼­ °Ë»ö Å×ÀÌºí
+ * ë„ì„œ ê²€ìƒ‰ í…Œì´ë¸”
  */
 public class searchTable {
 
